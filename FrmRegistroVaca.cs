@@ -10,17 +10,21 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class FrmListar : Form
+    public partial class FrmRegistroVaca : Form
     {
-        public FrmListar()
+        public FrmRegistroVaca()
         {
             InitializeComponent();
         }
 
-        private void cmdAgregar_Click(object sender, EventArgs e)
+        private void FrmRegistroVaca_Load(object sender, EventArgs e)
         {
-            FrmRegistroVaca VentanaRegistrarVaca = new FrmRegistroVaca();
-            VentanaRegistrarVaca.ShowDialog();
+
+        }
+
+        private void radioButton7_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

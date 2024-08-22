@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmRegistroVaca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistroVaca.Designer.cs">
+      <DependentUpon>FrmRegistroVaca.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmListar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmRegistroVaca.resx">
+      <DependentUpon>FrmRegistroVaca.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmListar.resx">
       <DependentUpon>FrmListar.cs</DependentUpon>
     </EmbeddedResource>

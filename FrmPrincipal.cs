@@ -24,6 +24,8 @@ namespace WindowsFormsApp1
             panelSubMenuProduccion.Visible = false;
             panelSubMenuListado.Visible = false;
             panelSubMenuEstadisticas.Visible = false;
+            panelSubMenuInsumos.Visible = false;
+            panelSubMenuAdministracion.Visible = false;
         }
 
         private void OcultarSubMenu()
@@ -41,6 +43,16 @@ namespace WindowsFormsApp1
             if(panelSubMenuEstadisticas.Visible == true)
             {
                 panelSubMenuEstadisticas.Visible = false;
+            }
+
+            if(panelSubMenuInsumos.Visible == true)
+            {
+                panelSubMenuInsumos.Visible = false;
+            }
+
+            if(panelSubMenuAdministracion.Visible == true)
+            {
+                panelSubMenuAdministracion.Visible = false;
             }
         }
 
@@ -118,6 +130,16 @@ namespace WindowsFormsApp1
         private void cmdEstadisticas_Click(object sender, EventArgs e)
         {
             MostrarSubMenu(panelSubMenuEstadisticas);
+        }
+
+        private void cmdInsumos_Click(object sender, EventArgs e)
+        {
+            MostrarSubMenu(panelSubMenuInsumos);
+        }
+
+        private void cmdAdministracion_Click(object sender, EventArgs e)
+        {
+            MostrarSubMenu(panelSubMenuAdministracion);
         }
     }
 }

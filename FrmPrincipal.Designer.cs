@@ -30,6 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
             this.panelMenuLateral = new System.Windows.Forms.Panel();
+            this.panelSubMenuAdministracion = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.cmdAdministracion = new System.Windows.Forms.Button();
+            this.panelSubMenuInsumos = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.cmdInsumos = new System.Windows.Forms.Button();
             this.panelSubMenuEstadisticas = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -46,6 +54,8 @@
             this.panelFormularioHijo = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelMenuLateral.SuspendLayout();
+            this.panelSubMenuAdministracion.SuspendLayout();
+            this.panelSubMenuInsumos.SuspendLayout();
             this.panelSubMenuEstadisticas.SuspendLayout();
             this.panelSubMenuListado.SuspendLayout();
             this.panelSubMenuProduccion.SuspendLayout();
@@ -58,6 +68,10 @@
             // panelMenuLateral
             // 
             this.panelMenuLateral.BackColor = System.Drawing.Color.Black;
+            this.panelMenuLateral.Controls.Add(this.panelSubMenuAdministracion);
+            this.panelMenuLateral.Controls.Add(this.cmdAdministracion);
+            this.panelMenuLateral.Controls.Add(this.panelSubMenuInsumos);
+            this.panelMenuLateral.Controls.Add(this.cmdInsumos);
             this.panelMenuLateral.Controls.Add(this.panelSubMenuEstadisticas);
             this.panelMenuLateral.Controls.Add(this.cmdEstadisticas);
             this.panelMenuLateral.Controls.Add(this.panelSubMenuListado);
@@ -68,8 +82,124 @@
             this.panelMenuLateral.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenuLateral.Location = new System.Drawing.Point(0, 0);
             this.panelMenuLateral.Name = "panelMenuLateral";
-            this.panelMenuLateral.Size = new System.Drawing.Size(250, 456);
+            this.panelMenuLateral.Size = new System.Drawing.Size(250, 580);
             this.panelMenuLateral.TabIndex = 0;
+            // 
+            // panelSubMenuAdministracion
+            // 
+            this.panelSubMenuAdministracion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panelSubMenuAdministracion.Controls.Add(this.button7);
+            this.panelSubMenuAdministracion.Controls.Add(this.button8);
+            this.panelSubMenuAdministracion.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSubMenuAdministracion.Location = new System.Drawing.Point(0, 632);
+            this.panelSubMenuAdministracion.Name = "panelSubMenuAdministracion";
+            this.panelSubMenuAdministracion.Size = new System.Drawing.Size(250, 94);
+            this.panelSubMenuAdministracion.TabIndex = 8;
+            // 
+            // button7
+            // 
+            this.button7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.ForeColor = System.Drawing.Color.White;
+            this.button7.Location = new System.Drawing.Point(0, 41);
+            this.button7.Name = "button7";
+            this.button7.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button7.Size = new System.Drawing.Size(250, 41);
+            this.button7.TabIndex = 4;
+            this.button7.Text = " -----";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Location = new System.Drawing.Point(0, 0);
+            this.button8.Name = "button8";
+            this.button8.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button8.Size = new System.Drawing.Size(250, 41);
+            this.button8.TabIndex = 3;
+            this.button8.Text = " -----";
+            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // cmdAdministracion
+            // 
+            this.cmdAdministracion.Dock = System.Windows.Forms.DockStyle.Top;
+            this.cmdAdministracion.FlatAppearance.BorderSize = 0;
+            this.cmdAdministracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdAdministracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdAdministracion.ForeColor = System.Drawing.Color.White;
+            this.cmdAdministracion.Location = new System.Drawing.Point(0, 591);
+            this.cmdAdministracion.Name = "cmdAdministracion";
+            this.cmdAdministracion.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.cmdAdministracion.Size = new System.Drawing.Size(250, 41);
+            this.cmdAdministracion.TabIndex = 7;
+            this.cmdAdministracion.Text = "Administracion";
+            this.cmdAdministracion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.cmdAdministracion.UseVisualStyleBackColor = true;
+            this.cmdAdministracion.Click += new System.EventHandler(this.cmdAdministracion_Click);
+            // 
+            // panelSubMenuInsumos
+            // 
+            this.panelSubMenuInsumos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panelSubMenuInsumos.Controls.Add(this.button2);
+            this.panelSubMenuInsumos.Controls.Add(this.button3);
+            this.panelSubMenuInsumos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSubMenuInsumos.Location = new System.Drawing.Point(0, 497);
+            this.panelSubMenuInsumos.Name = "panelSubMenuInsumos";
+            this.panelSubMenuInsumos.Size = new System.Drawing.Size(250, 94);
+            this.panelSubMenuInsumos.TabIndex = 6;
+            // 
+            // button2
+            // 
+            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(0, 41);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button2.Size = new System.Drawing.Size(250, 41);
+            this.button2.TabIndex = 4;
+            this.button2.Text = " -----";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(0, 0);
+            this.button3.Name = "button3";
+            this.button3.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button3.Size = new System.Drawing.Size(250, 41);
+            this.button3.TabIndex = 3;
+            this.button3.Text = " -----";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // cmdInsumos
+            // 
+            this.cmdInsumos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.cmdInsumos.FlatAppearance.BorderSize = 0;
+            this.cmdInsumos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdInsumos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdInsumos.ForeColor = System.Drawing.Color.White;
+            this.cmdInsumos.Location = new System.Drawing.Point(0, 456);
+            this.cmdInsumos.Name = "cmdInsumos";
+            this.cmdInsumos.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.cmdInsumos.Size = new System.Drawing.Size(250, 41);
+            this.cmdInsumos.TabIndex = 5;
+            this.cmdInsumos.Text = "Insumos";
+            this.cmdInsumos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.cmdInsumos.UseVisualStyleBackColor = true;
+            this.cmdInsumos.Click += new System.EventHandler(this.cmdInsumos_Click);
             // 
             // panelSubMenuEstadisticas
             // 
@@ -259,7 +389,7 @@
             this.panelFormularioHijo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelFormularioHijo.Location = new System.Drawing.Point(250, 0);
             this.panelFormularioHijo.Name = "panelFormularioHijo";
-            this.panelFormularioHijo.Size = new System.Drawing.Size(602, 456);
+            this.panelFormularioHijo.Size = new System.Drawing.Size(652, 580);
             this.panelFormularioHijo.TabIndex = 1;
             // 
             // pictureBox2
@@ -268,7 +398,7 @@
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(602, 456);
+            this.pictureBox2.Size = new System.Drawing.Size(652, 580);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -278,13 +408,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(852, 456);
+            this.ClientSize = new System.Drawing.Size(902, 580);
             this.Controls.Add(this.panelFormularioHijo);
             this.Controls.Add(this.panelMenuLateral);
             this.Name = "FrmPrincipal";
             this.Text = "GanadoGestor";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelMenuLateral.ResumeLayout(false);
+            this.panelSubMenuAdministracion.ResumeLayout(false);
+            this.panelSubMenuInsumos.ResumeLayout(false);
             this.panelSubMenuEstadisticas.ResumeLayout(false);
             this.panelSubMenuListado.ResumeLayout(false);
             this.panelSubMenuProduccion.ResumeLayout(false);
@@ -314,6 +446,14 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panelFormularioHijo;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel panelSubMenuAdministracion;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button cmdAdministracion;
+        private System.Windows.Forms.Panel panelSubMenuInsumos;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button cmdInsumos;
     }
 }
 
